@@ -7,6 +7,14 @@ const collectEmployees = function() {
   let employeesArray = [];
   let employeeObject; 
 
+employeesArray.sort(function(a, b) {
+  if (a.lastName < b.lastName) {
+    return -1; }
+    if (a.lastName > b.lastName) {
+    return 1; } {
+    return 0; }
+  }); 
+
 
 
 while (true) {
@@ -50,9 +58,9 @@ console.log("Average Employee Salary: " + averageSalary);
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
-  let drawEmployee = Math.floor(Math.random() * employeesArray.length); 
+  let drawEmployee = Math.floor(Math.random() * employeesArray.length.index); 
   let getRandomEmployee = employeesArray[drawEmployee];
-  console.log("Random Employee: " + getRandomEmployee); 
+  console.log("Congratulations to " + getRandomEmployee + " , our random drawing winner!"); 
 
 }
 /*
