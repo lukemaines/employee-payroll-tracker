@@ -12,7 +12,7 @@ employeesArray.sort(function(a, b) {
     return -1; }
     if (a.lastName > b.lastName) {
     return 1; } {
-    return 0; }
+    return 0; }``
   }); 
 
 
@@ -23,10 +23,6 @@ while (true) {
     let salary = prompt("Employee Salary:");
       if (isNaN(Number(salary))) {
         salary = 0;}
-    let option = confirm("Do you want to add another employee?");
-    if (!option) { 
-      break; 
-    }
 
     employeeObject = {
       firstName: firstName,
@@ -36,6 +32,11 @@ while (true) {
 
     console.log(employeeObject);
     employeesArray.push(employeeObject); 
+
+    let option = confirm("Do you want to add another employee?");
+    if (!option) { 
+      break; 
+    }
 }
   displayEmployees(employeesArray);
   return employeesArray; 
