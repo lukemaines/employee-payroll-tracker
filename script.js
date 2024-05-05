@@ -28,9 +28,9 @@ while (true) {
 
     console.log(employeeObject);
     employeesArray.push(employeeObject); 
-    displayEmployees(employeesArray);
 }
-
+  displayEmployees(employeesArray);
+  return employeesArray; 
 }
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
